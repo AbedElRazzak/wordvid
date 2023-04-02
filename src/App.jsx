@@ -30,7 +30,7 @@ function App() {
     async function getTranscriptApi() {
       const response = await axios({
         method: 'post',
-        url: 'https://wv-backserver.onrender.com/api',
+        url: 'https://wvbackserver-production.up.railway.app/api',
         headers: {
           'Content-Type': 'application/json'
         },
