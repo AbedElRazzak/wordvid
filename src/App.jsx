@@ -158,27 +158,27 @@ function App() {
 
 
     return (
-      <div className='h-screen w-[100%] overflow-auto from-first-grd to-sec-grd bg-gradient-to-tr flex flex-col items-center text-white '>
+      <div className='h-screen w-[100%] overflow-auto from-first-grd to-sec-grd bg-gradient-to-tr flex flex-col items-center text-white p-4'>
         <div><div className='w-20 h-20 rounded-full flex justify-center items-center bg-circle-dash border-2 border-dash text-dash text-4xl mb-10 mt-4'>2</div></div>
-        <div className='text-dash font-semi-bold text-2xl leading-5 mt-4 mb-4'>Up and Running</div>
-        <div className='text-white font-bold text-4xl'>The video is ready, search for a word!</div>
+        <div className='text-dash font-semi-bold text-2xl leading-5 mt-4 mb-4 text-center'>Up and Running</div>
+        <div className='text-white font-bold text-4xl text-center'>The video is ready, search for a word!</div>
         <div className="w-40 relative flex py-6 items-center mb-10">
           <div className="flex-grow border-t border-dash"></div>
         </div>
         <div className='h-auto max-w-2xl mb-6'>
-          <div className='text-white text-xl text-center'>Check the video for time stamps.</div>
+          <div className='text-white text-xl text-center text-center'>Check the video for time stamps.</div>
         </div>
-        <div className='h-15 w-[40rem] border-[1px] border-dash rounded-lg shadow shadow-dash flex flex-row justify bg-transparent mb-10'>
+        <div className='h-15 aw-[40rem] border-[1px] border-dash rounded-lg shadow shadow-dash flex flex-row justify bg-transparent mb-10 sm:w-40rem w-full max-w-2xl'>
           <input onChange={(event) => {setSearchingWord(event.target.value)}} className='p-4 h-full w-full bg-transparent outline-none border-none text-white' type="text" placeholder="Search for a word here"></input>
           <div className='w-full max-w-[7rem] rounded-r-lg flex justify-center items-center'>
             <div onClick={() => {searchHandler(searchingWord)}} className='m-3 h-8 w-[4.8rem] bg-btn-prim flex content-center items-center p-1 rounded-md text-white cursor-pointer hover:bg-btn-sec'>Search ➜</div>
           </div>
         </div>
-        {wordIsValid === false && <div className='text-red-500 text-xs text-center mt-2'>Error, the word doesn't exist.</div>}
+        {wordIsValid === false && <div className='text-red-500 text-xs text-center mt-2 text-center'>Error, the word doesn't exist.</div>}
         {wordObjct.word !== "" &&         
         <div className='h-auto max-w-2xl mb-6'>
           <span className='text-white font-bold text-4xl'>{wordObjct.word}</span>
-          <span className='text-white text-xl text-center ml-4'>has been said {wordObjct.countArr.length} time(s)</span>
+          <span className='text-white text-xl text-center ml-4 text-center'>has been said {wordObjct.countArr.length} time(s)</span>
         </div>}
 
         <div>
