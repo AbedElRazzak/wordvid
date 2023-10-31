@@ -68,17 +68,17 @@ function App() {
 
     //Homepage UI
     return (
-      <div className="h-screen from-first-grd to-sec-grd bg-gradient-to-tr flex flex-col items-center">
+      <div className="h-screen from-first-grd to-sec-grd bg-gradient-to-tr flex flex-col items-center p-4">
         <div><div className='w-20 h-20 rounded-full flex justify-center items-center bg-bg-circle border-2 border-circle-br text-circle-br text-4xl mb-16 mt-4'>1</div></div>
-        <div className='text-circle-br font-semi-bold text-2xl leading-5 mb-4'>Firstly, Upload a Youtube video.</div>
-        <div className='text-white font-bold text-4xl'>Start and Tinker</div>
+        <div className='text-circle-br font-semi-bold text-2xl leading-5 mb-4 text-center'>Firstly, Upload a Youtube video.</div>
+        <div className='text-white font-bold text-4xl text-center'>Start and Tinker</div>
         <div className="w-40 relative flex py-6 items-center">
           <div className="flex-grow border-t border-circle-br"></div>
         </div>
         <div className='h-auto max-w-2xl mb-6'>
           <div className='text-white text-xl text-center'>Please make sure that the video url you're providing has a transcript.</div>
         </div>
-        <div className='h-15 w-[40rem] border-[1px] rounded-lg shadow shadow-circle-br border-circle-br flex flex-row justify bg-transparent' >
+        <div className='h-15 wa-[40rem] auato border-[1px] rounded-lg shadow shadow-circle-br border-circle-br flex flex-row justify bg-transparent sm:w-40rem w-full max-w-2xl' >
           <input onChange={(event) => {setVidUrl(event.target.value)}} className='p-4 h-full w-full bg-transparent outline-none border-none text-white' type="text" placeholder="Paste your video link here"></input>
           <div className='w-full max-w-[7rem] rounded-r-lg flex justify-center items-center'>
             <div onClick={submitHandler} className='m-3 h-8 w-[5rem] bg-btn-prim flex content-center items-center p-1 rounded-md text-white cursor-pointer hover:bg-btn-sec'>Submit ➜</div>
